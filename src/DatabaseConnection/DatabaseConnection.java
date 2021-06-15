@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Damara
+ * @author Firdaus Haqiqi
  */
 public class DatabaseConnection {
     public static Connection getKoneksi(String host, String port, String username, String password, String db)
