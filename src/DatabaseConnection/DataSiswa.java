@@ -95,31 +95,16 @@ public class DataSiswa extends javax.swing.JFrame {
                 "Title 1", "Title 2", "Title 3", "Title 4"
             }
         ));
-        tbl_siswa.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                tbl_siswaMouseClicked(evt);
-            }
-        });
         jScrollPane3.setViewportView(tbl_siswa);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         jLabel1.setText("DATA SISWA");
 
         cmdHapus.setText("Hapus");
-        cmdHapus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmdHapusActionPerformed(evt);
-            }
-        });
 
         cmdEdit.setText("Ubah");
 
         cmdTambah.setText("Tambah");
-        cmdTambah.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                cmdTambahActionPerformed(evt);
-            }
-        });
 
         cmdRefresh.setText("Refresh");
 
@@ -169,22 +154,6 @@ public class DataSiswa extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void cmdTambahActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdTambahActionPerformed
-        // TODO add your handling code here:
-        ManageData tambahData = new ManageData (this, true);
-        tambahData.setVisible(true);
-    }//GEN-LAST:event_cmdTambahActionPerformed
-    
-    int baris;
-    private void tbl_siswaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tbl_siswaMouseClicked
-        // TODO add your handling code here:
-        baris = tbl_siswa.getSelectedRow();
-    }//GEN-LAST:event_tbl_siswaMouseClicked
-
-    private void cmdHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmdHapusActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_cmdHapusActionPerformed
 
     /**
      * @param args the command line arguments
